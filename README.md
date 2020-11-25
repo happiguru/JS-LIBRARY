@@ -38,11 +38,11 @@ To get a local copy  and to set it up and running follow these simple example st
 - Twitter: [@Lekunze_Nley](https://twitter.com/Lekunze_Nley)
 - Linkedin: [lekunze-nley](https://www.linkedin.com/in/lekunze-nley/)
 
-👤 ** name here**
+👤 **Victor Gonzalez Buitrago**
 
-- Github: [](https://github.com/)
-- Twitter: [@](https://twitter.com/)
-- Linkedin: [linkedin](https://www.linkedin.com/in/)
+- Github: [Shaqri](https://github.com/Shaqri)
+- Twitter: [@victorgonbu1](https://twitter.com/victorgonbu1)
+- Linkedin: [Victor Gonzalez](https://www.linkedin.com/in/victor-manuel-gonzalez-buitrago/)
 
 
 
