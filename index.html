@@ -1,61 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link href="cssreset" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
-        <link href="css/style.css" rel="stylesheet" />
-        <script src="https://kit.fontawesome.com/cbdf2b0f0e.js" crossorigin="anonymous"></script>
-        <title>New-Foundland-Library</title>
-    </head>
-    <body>
-        <header class="container">
-            <h1>Library App</h1>
-            <nav>
-                <button class="show-form">Add New Book</button>
-            </nav>
-        </header>
-        <main class="container">
-            <div class="row">
-                <section class="col-6">
-                    <h1>Register a new book</h1>
-                    <form id="book-form">
-                        <div class="form-group">
-                          <label for="booktitle">Title</label>
-                          <input type="text" class="form-control" placeholder="Enter book title" id="booktitle">
-                        </div>
-                        <div class="form-group">
-                          <label for="author">Author:</label>
-                          <input type="text" class="form-control" placeholder="Enter author's name" id="author">
-                        </div>
-                        <div class="form-group">
-                          <label for="pages">Pages:</label>
-                          <input type="text" class="form-control" placeholder="Enter book's number of pages" id="pages">
-                        </div>
-                        <div class="form-group form-check">
-                            <label for="readstatus">
-                                <input class="form-check-input" type="checkbox" id="status">Read status
-                            </label>
-                        </div>
-                        <input type="submit" id="submit" value="Add Book" class="btn btn-primary">
-                      </form>
-                </section>
-
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="cssreset" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/cbdf2b0f0e.js" crossorigin="anonymous"></script>
+    <title>New-Foundland-Library</title>
+  </head>
+  <body>
+    <header class="container">
+      <h1>Library App</h1>
+      <nav>
+        <button class="show-form">Add New Book</button>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="row">
+        <section class="col-6">
+          <h1>Register a new book</h1>
+          <form id="book-form">
+            <div class="form-group">
+              <label for="booktitle">Title</label>
+              <input type="text" class="form-control" placeholder="Enter book title" id="booktitle" />
             </div>
-
-        </main>
-        <section class="container mt-4">
-            <ul id="book-display" class="mt-4">
-                hello
-            </ul>
+            <div class="form-group">
+              <label for="author">Author:</label>
+              <input type="text" class="form-control" placeholder="Enter author's name" id="author" />
+            </div>
+            <div class="form-group">
+              <label for="pages">Pages:</label>
+              <input type="text" class="form-control" placeholder="Enter book's number of pages" id="pages" />
+            </div>
+            <div class="form-group form-check">
+              <label for="readstatus"> <input class="form-check-input" type="checkbox" id="status" />Read status </label>
+            </div>
+            <input type="submit" id="submit" value="Add Book" class="btn btn-primary" />
+          </form>
         </section>
-        <footer>
-
-        </footer>
-        <script src="js/script.js"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    </body>
+      </div>
+    </main>
+    <section class="container mt-4">
+      <ul id="book-display" class="mt-4">
+        hello
+      </ul>
+    </section>
+    <footer></footer>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
 </html>
