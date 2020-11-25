@@ -45,7 +45,7 @@ const displayLibrary = (array) => {
         deleteBtn.textContent = 'Delete';
 
         deleteBtn.addEventListener('click', () => {
-            const index = myLibrary.findIndex(item.title === book.title);
+            const index = myLibrary.findIndex(item => item.title === book.title);
             myLibrary.splice(index, 1);
             displayLibrary(myLibrary);
             saveLocalStorage();
