@@ -10,16 +10,17 @@
         <title>New-Foundland-Library</title>
     </head>
     <body>
-        <header class="container-fluid">
+        <header class="container">
+            <h1>Library App</h1>
             <nav>
-
+                <button class="show-form">Add New Book</button>
             </nav>
         </header>
         <main class="container">
             <div class="row">
                 <section class="col-6">
                     <h1>Register a new book</h1>
-                    <form action="" method="POST">
+                    <form id="book-form">
                         <div class="form-group">
                           <label for="booktitle">Title</label>
                           <input type="text" class="form-control" placeholder="Enter book title" id="booktitle">
@@ -37,13 +38,18 @@
                                 <input class="form-check-input" type="checkbox" id="status">Read status
                             </label>
                         </div>
-                        <button type="submit" class="btn btn-primary">Add Book</button>
+                        <input type="submit" id="submit" value="Add Book" class="btn btn-primary">
                       </form>
                 </section>
 
             </div>
 
         </main>
+        <section class="container mt-4">
+            <ul id="book-display" class="mt-4">
+                hello
+            </ul>
+        </section>
         <footer>
 
         </footer>
