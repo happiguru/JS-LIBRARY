@@ -53,7 +53,7 @@ const displayLibrary = (array) => {
     return deleteBtn;
   };
 
-  for (let i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i+=1) {
     const bookSection = document.createElement('li');
     const title = document.createElement('h3');
     const author = document.createElement('p');
@@ -103,7 +103,7 @@ submit.addEventListener('click', (e) => {
 });
 
 const defaultBooks = () => {
-  const book1 = new Book('When Rain Cloud Gathers', 'Charles Dickens', 129, true);
+  const book = new Book('When Rain Cloud Gathers', 'Charles Dickens', 129, true);
 };
 
 const showForm = () => {
