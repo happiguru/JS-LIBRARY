@@ -2,7 +2,7 @@
 
 const bookList = document.getElementById('book-display');
 const form = document.getElementById('book-form');
-const showFormBtn = document.querySelector(''.show-form');
+const showFormBtn = document.querySelector('.show-form');
 const submit = document.querySelector('#submit');
 const myLibrary = JSON.parse(localStorage.getItem('myLibrary')) || [];
 
