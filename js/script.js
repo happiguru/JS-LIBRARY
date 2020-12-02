@@ -6,12 +6,25 @@ const showFormBtn = document.querySelector('.show-form');
 const submit = document.querySelector('#submit');
 const myLibrary = JSON.parse(localStorage.getItem('myLibrary')) || [];
 
-function Book(title, author, pages, read) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.read = read;
+function booky(title, author, pages, read){
+  var b = {title, author, pages, read};
+  return b;
 }
+
+const addBookToLibrary = () => {
+  const title = document.getElementById('booktitle').value;
+  const author = document.getElementById('author').value;
+  const pages = document.getElementById('pages').value;
+  const read = document.getElementById('status').checked;
+
+  const book = booky(title, author, pages, read);
+
+
+  myLibrary.push(book);
+  displayLibrary(myLibrary);
+  saveLocalStorage();
+  form.reset();
+};
 
 const saveLocalStorage = () => {
   localStorage.setItem('myLibrary', JSON.stringify(myLibrary));
@@ -82,19 +95,21 @@ const displayLibrary = (array) => {
   }
 };
 
-const addBookToLibrary = () => {
-  const title = document.getElementById('booktitle').value;
-  const author = document.getElementById('author').value;
-  const pages = document.getElementById('pages').value;
-  const read = document.getElementById('status').checked;
+// const addBookToLibrary = () => {
+//   const title = document.getElementById('booktitle').value;
+//   const author = document.getElementById('author').value;
+//   const pages = document.getElementById('pages').value;
+//   const read = document.getElementById('status').checked;
 
-  const book = new Book(title, author, pages, read);
+//   // const book = new Book(title, author, pages, read);
+//   const book = booky(title, author, pages, read);
 
-  myLibrary.push(book);
-  displayLibrary(myLibrary);
-  saveLocalStorage();
-  form.reset();
-};
+
+//   myLibrary.push(book);
+//   displayLibrary(myLibrary);
+//   saveLocalStorage();
+//   form.reset();
+// };
 
 submit.addEventListener('click', (e) => {
   e.preventDefault();
