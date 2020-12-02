@@ -6,10 +6,19 @@ const showFormBtn = document.querySelector('.show-form');
 const submit = document.querySelector('#submit');
 const myLibrary = JSON.parse(localStorage.getItem('myLibrary')) || [];
 
-function booky(title, author, pages, read){
-  var b = {title, author, pages, read};
-  return b;
+// function booky(title, author, pages, read){
+//   var b = {title, author, pages, read};
+//   return b;
+// }
+class Book {
+  constructor(title, author, pages, read){
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+  }
 }
+
 
 const addBookToLibrary = () => {
   const title = document.getElementById('booktitle').value;
@@ -17,7 +26,7 @@ const addBookToLibrary = () => {
   const pages = document.getElementById('pages').value;
   const read = document.getElementById('status').checked;
 
-  const book = booky(title, author, pages, read);
+  const book = new Book(title, author, pages, read);
 
 
   myLibrary.push(book);
